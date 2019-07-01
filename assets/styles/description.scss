@@ -1,0 +1,70 @@
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  font-size: 18px;
+  font-family: 'Ubuntu-Medium';
+  text-transform: uppercase;
+}
+.description--row{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.description__block{
+  display: inline-flex;
+  align-items: center;
+  color:#3c3b3b;
+}
+
+.description__block--column{
+  display: flex;
+  flex-direction: column;
+  width: 33.3%;
+  margin: 15px 0;
+}
+
+.block__wrap{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+
+.sofa{
+  background: url('../../assets/images/icons/sofa.png') no-repeat;
+  background-position: center center;
+  background-color: #ee6401 ;
+}
+.piano{
+  background: url('../../assets/images/icons/piano.png') no-repeat;
+  background-position: center center;
+  background-color: #ee6401 ;
+}
+.cart{
+  background: url('../../assets/images/icons/tacel.png') no-repeat;
+  background-position: center center;
+  background-color: #ee6401 ;
+}
+.man{
+  background: url('../../assets/images/icons/pens.png') no-repeat;
+  background-position: center center;
+  background-color: #ee6401 ;
+}
+
+.car{
+  background: url('../../assets/images/icons/transp.png') no-repeat;
+  background-position: center center;
+  background-color: #ee6401 ;
+}
+
+.garbage{
+  background: url('../../assets/images/icons/mys.png') no-repeat;
+  background-position: center center;
+  background-color: #ee6401 ;
+}
+.icon__img{
+  width: 50px;
+  height: 50px;
+}

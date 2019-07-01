@@ -1,0 +1,43 @@
+.form--contacts{
+  margin-top: 50px;
+}
+
+.form__content{
+  // max-width: 400px;
+  // min-height: 200px;
+  // border: 2px solid wheat;
+  // border-radius: 50px/50px;
+  font-family: 'Ubuntu-Bold';
+  text-align: center;
+  padding: 10%;
+  color: antiquewhite;
+  // margin-top: 35px;
+}
+.feedback__form{
+  max-width: 360px;
+  min-height: 200px;
+  border-radius: 50px/50px;
+  background: rgba(#fff, .5);
+  // background: linear-gradient(to right, #ea4604 2%, #ee6401 24%, #f89102 57%, #fba301 62%);
+}
+
+.feedback__form--background{
+  background: rgba(#000, .8);
+}
+
+.form-input {
+  border: none;
+  padding: 10px;
+  width: 70%;
+  border-radius: 12px;
+  background: #fff;
+  margin: 12px 0;
+}
+
+.order__button--color{
+  background: #757575;
+  &:hover{
+    background: #e43202;
+    transition: .3s;
+  }
+}

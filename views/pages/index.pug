@@ -1,0 +1,245 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Заказать услуги грузчиков Брянск |Недорого|Круглосуточно 
+    link(rel="stylesheet", type="text/css", href="./assets/styles/main.css")
+    link(rel="shortcut icon", href="./favicon.ico", type="image/x-icon")
+    
+    //- link(rel="stylesheet", type="text/css", href="./assets/styles/fullpage.css")
+    script(type="text/javascript",src="./assets/scripts/jquery-3.3.1.min.js")
+    script(type="text/javascript",src="./assets/scripts/fullpage.js")
+    script(type="text/javascript",src="./assets/scripts/scrolloverflow.min.js")
+    script(type="text/javascript",src="./assets/scripts/scroll.js")
+    script(type="text/javascript",src="./assets/scripts/overlay.js")
+    script(type="text/javascript",src="./assets/scripts/slider.js")
+  body
+    .wrapper
+      .maincontent#maincontent
+        section.section.hero
+          header.header 
+            .container
+              .header__union
+                .header__left
+                  .logo
+                    img(src="./assets/images/header/logo.png", alt="лого").logo-img
+                  //- - var items = ["Главная","О нас","Отзывы","Контакты"]
+                  nav.header__menu
+                    ul.menu__list
+                      li.menu__item
+                        a(href="#main").menu__title Главная
+                      li.menu__item
+                        a(href="#about").menu__title О нас
+                      li.menu__item
+                        a(href="#comments").menu__title Отзывы
+                      li.menu__item
+                        a(href="#contacts").menu__title Контакты
+                .header__right  
+                  //- span.phone 89998887766
+                  a(href="tel:89100341600").phone 8(910) 034-**-**
+                  button(type = "button").order__button Заказать
+              .overlay 
+                .overlay__form
+                  .form
+                    form(method = "POST", action="./assets/scripts/mail.php").feedback__form.feedback__form--overlay
+                      .form__content
+                        label.form__block
+                          input(type="text", placeholder = "Телефон", name="phone" required).form-input  
+                        .form__button
+                          button(type = "submit").order__button.order__button--overlay Заказать
+                      .button-close
+                  //- a(href = )
+          .hero__image
+            .hero__wrapper
+              h1.title Брянск-грузчики. Услуги грузчиков и разнорабочих в Брянске!
+              .hero__main
+                .form 
+                  form(method = "POST", action="./assets/scripts/mail.php").feedback__form
+                    .form__content
+                      label.form__block
+                        input(type="text", placeholder = "Имя", name="name").form-input
+                      label.form__block
+                        input(type="text", placeholder = "Телефон", name="phone" required).form-input  
+                      .form__button
+                        button(type = "submit").order__button Заказать
+                .description
+                  .description__block
+                    img(src="./assets/images/icons/money.png", alt="деньги").icon__img
+                    span.desc-title 250 руб/час
+                  .description__block
+                    img(src="./assets/images/icons/users.png", alt="деньги").icon__img
+                    span.desc-title опытный персонал
+                  .description__block
+                    img(src="./assets/images/icons/work.png", alt="деньги").icon__img
+                    span.desc-title работаем 24/7
+                  .description__block
+                    img(src="./assets/images/icons/card.png", alt="деньги").icon__img
+                    span.desc-title наличный/безналичный расчет
+                  .description__block
+                    img(src="./assets/images/icons/car.png", alt="деньги").icon__img
+                    span.desc-title транспорт 500р  
+        section.section.we
+          .container
+            h1.title.title--color качественно и быстро
+            .description.description--row
+              .description__block.description__block--column
+                .block__wrap.sofa
+                span.desc-title.desc-title-size Соберем и упакуем мебель  
+              .description__block.description__block--column
+                .block__wrap.piano
+                span.desc-title.desc-title-size Перевезем пианино и сейф  
+              .description__block.description__block--column
+                .block__wrap.cart
+                span.desc-title.desc-title-size Проведем такелажные работы  
+              .description__block.description__block--column
+                .block__wrap.man
+                span.desc-title.desc-title-size Поднимем больного человека  
+              .description__block.description__block--column
+                .block__wrap.car
+                span.desc-title.desc-title-size Предоставим транспорт и спецтехнику 
+              .description__block.description__block--column
+                .block__wrap.garbage
+                span.desc-title.desc-title-size Вывезем мусор на ближайший полигон
+            .workers
+              h2.title.title--color Как мы работаем
+              .slider__about
+                .slide
+                  img(src="./assets/images/slider/img1.jpg", alt="").slide-about_img
+                .slide
+                  img(src="./assets/images/slider/img6.jpg", alt="").slide-about_img
+                .slide
+                  img(src="./assets/images/slider/img3.jpg", alt="").slide-about_img
+                .slide
+                  img(src="./assets/images/slider/img2.jpg", alt="").slide-about_img
+                .slide
+                  img(src="./assets/images/slider/img5.jpg", alt="").slide-about_img
+                .slide
+                  img(src="./assets/images/slider/img4.jpg", alt="").slide-about_img
+        section.section.comments
+          .container
+            h2.title.title--size Отзывы
+            .comments__slider
+              a.arrow(onclick="minusSlide()")
+                img(src="./assets/images/comments/slider/left.png", alt="").arrow-img
+              .slider
+                .slide__item.active
+                  .user
+                    .user__photo
+                      img(src="./assets/images/comments/test.jpg", alt="").user-img
+                    .user__name
+                      span.username Павел
+                  .comment
+                    p.comment-text Lorem ipsum dolor sit amet.
+                
+                .slide__item
+                  .user
+                    .user__photo
+                      img(src="./assets/images/comments/test2.jpg", alt="").user-img
+                    .user__name
+                      span.username Мария
+                  .comment
+                    p.comment-text Lorem2 ipsum dolor sit amet, consectetuer adipiscing elit. 
+                  
+                .slide__item
+                  .user
+                    .user__photo
+                      img(src="./assets/images/comments/test3.jpg", alt="").user-img
+                    .user__name
+                      span.username Кирилл
+                  .comment
+                    p.comment-text Lorem3 ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                //- .comment__block
+                //-   .user
+                //-     .user__photo
+                //-       img(src="../../assets/images/comments/test.jpg", alt="").user-img
+                //-     .user__name
+                //-       span.username Имя
+                //-     .user__comment 
+              a.arrow(onclick="plusSlide()")
+                img(src="./assets/images/comments/slider/right.png", alt="").arrow-img
+                
+        section.section.contacts
+          .container
+            h2.title.title--color C НАМИ ПЕРЕЕЗД БУДЕТ БЫСТРЫМ И КОМФОРНЫМ
+            .contacts__content
+              .contacts__stage
+                ul.stage__list
+                  li.stage__item
+                    .item__content
+                      .item__title
+                        .item-pic
+                          img(src="./assets/images/icons/form.png", alt="").stage-icon__img
+                        .item__desc 
+                          h3.item-title Шаг 1
+                          span.item-note  Отправьте вашу заявку
+                      .item__comment
+                        p Оставьте заявку на сайте и мы свяжемся с вами в течение 20 минут
+                  li.stage__item
+                    img(src="./assets/images/icons/share.png", alt="").stage-icon__share
+                    .item__content
+                      .item__title
+                        .item-pic
+                          img(src="./assets/images/icons/box.png", alt="").stage-icon__img
+                        .item__desc 
+                          h3.item-title Шаг 2
+                          span.item-note Подтвердите заказ
+                      .item__comment
+                        p Уточните детали заявки и подтвердите заказ
+                    img(src="./assets/images/icons/share.png", alt="").stage-icon__share.stage-icon__share--rotate
+                  li.stage__item 
+                    .item__content
+                      .item__title
+                        .item-pic
+                          img(src="./assets/images/icons/worker.png", alt="").stage-icon__img
+                        .item__desc 
+                          h3.item-title Шаг 3
+                          span.item-note Ожидайте рабочих
+                      .item__comment
+                        p Мы обрабатываем ваш заказ и отправляем грузчиков/разнорабочиx
+                    img(src="./assets/images/icons/share.png", alt="").stage-icon__share.stage-icon__share--last-rotate
+              .form.form--contacts
+                form(method = "POST", action="./assets/scripts/mail.php").feedback__form.feedback__form--background
+                  .form__content 
+                    .form-title 
+                      |Не дозвонились?
+                    | Закажите звонок
+                    label.form__block
+                      input(type="text", placeholder = "Имя" name="name" ).form-input
+
+                    label.form__block
+                      input(type="text", placeholder = "Телефон" name="phohe" required).form-input  
+        
+                    .form__button
+                      button(type = "submit").order__button.order__button--color Заказать        
+                
+          footer.footer
+            .contaiter
+              .footer__content
+                .footer__block
+                  .footer__notation
+                    .text 
+                      |Работаем круглосуточно 
+                    .text Без выходных
+                .footer__block
+                  .logo
+                    img(src="./assets/images/header/logo.png", alt="лого").logo-img
+                .footer__block
+                  .footer__contacts
+                    .contacts__phone
+                      a(href="tel:84832341600").mobile__link
+                        svg.phone__icon
+                          use(xlink:href="./assets/svg/sprite.svg#oldPhone")
+                        .phone 8(483) 234-**-**
+                    .contacts__phone
+                      a(href="tel:89100341600").mobile__link
+                        svg.phone__icon
+                          use(xlink:href="./assets/svg/sprite.svg#mobile")
+                        .phone 8(910) 034-**-**
+                      //- img(src="../../assets/images/icons/phone.png", alt="")
+
+
+
+          
+  //- pug --watch ./views/pages/ --out ./dist/

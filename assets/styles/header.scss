@@ -1,0 +1,57 @@
+.header__union{
+  display: flex;
+  align-items: center;
+  font-family: 'Ubuntu-Medium';
+  text-transform: uppercase;
+  font-size: 16px;
+  color: antiquewhite;
+  justify-content: space-evenly;
+}
+.header{
+background: linear-gradient(to right, #e43202 10%, #ee6401 30%, #f89102 55%, #fba301 62%);
+}
+.header__left{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.header__right{
+  display: flex;
+
+  width: 50%;
+  justify-content: inherit;
+  align-items: center;
+}
+.phone{
+  font-size: 18px;
+  color:antiquewhite;
+  &:hover{
+  color: #3d2c06bf;
+  transition: .3s;
+  }
+}
+.header a{
+  color:antiquewhite;
+  &:hover{
+    color: #5e421d;
+    transition: .3s;
+    opacity: .8;
+  }
+}
+.order__button{
+  background-color: #3343a2;
+  color: white;
+  padding: .7rem 2rem;
+  font-family: 'Ubuntu-Medium';
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+  border: 0;
+  border-radius: 5px;
+
+  &:hover{
+    background-color: #566cc6;
+  }
+}
